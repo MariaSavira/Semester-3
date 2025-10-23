@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.kembali-link {
+    text-decoration: none;
+    color: #385B76;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.kembali-link:hover {
+  font-weight: 600;
+}
+
+.skor-display {
+    padding: 5px 15px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.kartu-soal {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.pertanyaan {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.progress-soal {
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+}
+
+.pilihan-jawaban {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.pilihan-jawaban .opsi {
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.pilihan-jawaban .opsi:hover {
+    background-color: #e0e0e0;
+}
+
+.pilihan-jawaban .opsi[style*="lightgreen"] {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+    box-shadow: 0 0 0 1px #c3e6cb;
+}
+
+.pilihan-jawaban .opsi[style*="salmon"] {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+    box-shadow: 0 0 0 1px #f5c6cb;
+}
+
+.kontrol-quiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.timer-display {
+    font-size: 16px;
+    color: #385B76;
+    font-weight: 600;
+}
+
+.next-button {
+    padding: 10px 20px;
+    background-color: rgba(56, 91, 118, 0.75);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.next-button:hover {
+    background-color: #385B76;
+}
+
+.quiz-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.quiz-footer p {
+    font-size: 12px;
+    color: #aaa;
+}

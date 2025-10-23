@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Halaman Quiz - LearnHub</title>
+        <link rel="stylesheet" href="css/quiz.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="icon" type="images/x-icon" href="assets/logo/web-logo.png"/>
+    </head>
+    <body>
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <a href="index.html" class="kembali-link">
+                    <i class="fas fa-chevron-left"></i> Kembali ke Beranda
+                </a>
+                <div class="skor-display">
+                    <span id="skor-info">Skor: 0</span>
+                </div>
+            </div>
+
+            <div class="kartu-soal">
+                <p class="pertanyaan" id="soal">
+                    Apa kepanjangan dari HTML?
+                </p>
+
+                <div class="progress-soal">
+                    <span id="progress-text">1/5</span>
+                </div>
+            </div>
+
+            <div class="pilihan-jawaban" id="pilihan">
+                <button class="opsi">Home Tool Markup Language</button>
+                <button class="opsi">Hyper Text Markup Language</button>
+                <button class="opsi">Hyperlinks and Text Markup
+                    Language</button>
+                <button class="opsi">Tidak Tau</button>
+            </div>
+
+            <div class="kontrol-quiz">
+                <span class="timer-display">Waktu: <span id="timer">5</span>
+                    detik</span>
+
+                <button class="next-button" id="next">
+                    Soal Berikutnya <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="quiz-footer">
+                <img src="assets/logo/LearnHub Dark.png" style="width: 10%; height: auto;">
+                <p> © 2025 Maria Savira</p>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/414628e582.js"
+            crossorigin="anonymous"></script>
+        <script src="js/quiz.js"></script> </body>
+</html>
